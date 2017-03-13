@@ -54,4 +54,14 @@ public class ChartsTest {
         assertEquals(movie2, charts.getMovie(1));
         assertEquals(movie3, charts.getMovie(2));
     }
+
+    @Test
+    public void canSwapRank(){
+        charts.addAtRank(movie1);
+        charts.addAtRank(movie2);
+        charts.addAtRank(movie3);
+        charts.swapRank(movie2,movie3);
+        assertEquals(movie2,charts.getMovie(2));
+        assertEquals(movie3,charts.getMovie(1));
+    }
 }
