@@ -13,12 +13,13 @@ public class Charts {
         films = new ArrayList<Movie>();
     }
 
-    public void add(Movie film){
-        films.add(film);
-    }
-
     public int getLength(){
         return films.size();
+    }
+
+    public void addAtRank(Movie film){
+        int ranking = film.getCurrentRanking() - 1;
+        films.add(ranking, film);
     }
 
 }

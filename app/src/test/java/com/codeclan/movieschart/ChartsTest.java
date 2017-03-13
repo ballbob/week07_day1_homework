@@ -26,4 +26,12 @@ public class ChartsTest {
     public void canGetLengthandChartStartsEmpty(){
       assertEquals(0,charts.getLength());
     }
+
+    @Test
+    public void canAddFilm(){
+        charts.addAtRank(movie1);
+        assertEquals(1,charts.getLength());
+    }
+
+
 }
