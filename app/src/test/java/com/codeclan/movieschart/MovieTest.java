@@ -1,5 +1,8 @@
 package com.codeclan.movieschart;
 import org.junit.*;
+
+import java.util.ArrayList;
+
 import static org.junit.Assert.*;
 
 /**
@@ -53,4 +56,5 @@ public class MovieTest {
     public void overrideDefaultStringTest(){
         assertEquals("Titenic (Romentic horrur) at 1",movie.toString());
     }
+
 }
