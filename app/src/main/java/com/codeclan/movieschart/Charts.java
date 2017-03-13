@@ -22,4 +22,9 @@ public class Charts {
         films.add(ranking, film);
     }
 
+    public int getMovieRanking(int index){
+        Movie film = films.get(index);
+        return film.getCurrentRanking();
+    }
+
 }
