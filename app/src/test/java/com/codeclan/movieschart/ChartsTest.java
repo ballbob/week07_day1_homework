@@ -45,4 +45,13 @@ public class ChartsTest {
         assertEquals(3,charts.getMovieRanking(2));
     }
 
+    @Test
+    public void canGetFilm(){
+        charts.addAtRank(movie1);
+        charts.addAtRank(movie2);
+        charts.addAtRank(movie3);
+        assertEquals(movie1, charts.getMovie(0));
+        assertEquals(movie2, charts.getMovie(1));
+        assertEquals(movie3, charts.getMovie(2));
+    }
 }

@@ -27,4 +27,8 @@ public class Charts {
         return film.getCurrentRanking();
     }
 
+    public Movie getMovie(int index){
+        return films.get(index);
+    }
+
 }
